@@ -44,21 +44,3 @@ class DeleteAction(Action):
 h = TextHistory()
 #print(h.text, h.version)
 print(h.insert('xyz', 1))
-#h.insert =
-
-'''
-class InsertAction(Action):
-    #def __init__(self, text, pos):
-        #self.text = text
-        #self.pos = pos
-    def insert(self ,text, tekst, pos):
-        if len(self.text) >= pos >= 0:
-            BEGIN = self.text[0:int(pos)]
-            print(tekst)
-            END = self.text[int(pos):]
-            self.text = BEGIN + tekst + END
-            return self.version + 1
-        else:
-            raise ValueError
-        return self.version + 1
-        '''
